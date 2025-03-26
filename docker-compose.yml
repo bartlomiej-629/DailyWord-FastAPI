@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      target: final
+    ports:
+      - "8000:8000"
+    env_file: .env
+
+  tests:
+    build:
+      context: .
+      target: test
+    env_file: .env
+    command: ["pytest", "tests"]

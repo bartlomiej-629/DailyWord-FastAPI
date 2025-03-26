@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+requests
+openai
+python-dotenv
+pytest
+openai==0.28
+apscheduler
+cachetools
+pytest
